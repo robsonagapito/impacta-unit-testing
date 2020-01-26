@@ -10,12 +10,16 @@ public class Conta {
     }
 
     public double depositarValor(double valor){
-        setSaldo(getSaldo() + valor);
+        if (valor > 0 ) {
+            setSaldo(getSaldo() + valor);
+        }
         return getTotal();
     }
 
     public double sacarValor(double valor){
-        setSaldo(getSaldo() - valor);
+        if (valor > 0 ) {
+            setSaldo(getSaldo() - valor);
+        }
         return getSaldo();
     }
 

@@ -1,5 +1,3 @@
-package extra;
-
 public class ContaMock {
     private double saldo;
 
@@ -12,16 +10,20 @@ public class ContaMock {
     }
 
     public double depositarValor(double valor){
-        if (valor <= 10){
-            setSaldo(getSaldo() + valor);
-        } else {
-            System.out.println("Valor não pode ser maior que 10 reais");
+        if (valor > 0 ) {
+            if (valor <= 10) {
+                setSaldo(getSaldo() + valor);
+            } else {
+                System.out.println("Valor não pode ser maior que 10 reais");
+            }
         }
         return getTotal();
     }
 
     public double sacarValor(double valor){
-        setSaldo(getSaldo() - valor);
+        if (valor > 0 ) {
+            setSaldo(getSaldo() - valor);
+        }
         return getSaldo();
     }
 
