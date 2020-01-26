@@ -4,11 +4,15 @@ import org.junit.Test;
 
 public class ContaTest {
 
-    private double valorDep = 0;
+    private double valorDep;
+    private double valorSac;
+    private double valorNeg;
 
     @Before
     public void prepareTests(){
         valorDep = 12;
+        valorSac = 10.00;
+        valorNeg = -10.00;
     }
 
     @Test
@@ -33,7 +37,6 @@ public class ContaTest {
 
         //arrange
         Conta conta =  new Conta();
-        double valorSac = 10.00;
         double expect = 2.00;
         double actual;
 
@@ -53,7 +56,6 @@ public class ContaTest {
 
         //arrange
         Conta conta =  new Conta();
-        double valorNeg = -10.00;
         double expect = 12.00;
         double actual;
 
@@ -73,7 +75,6 @@ public class ContaTest {
 
         //arrange
         Conta conta =  new Conta();
-        double valorNeg = -10.00;
         double expect = 12.00;
         double actual;
 

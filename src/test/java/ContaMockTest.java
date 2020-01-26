@@ -11,10 +11,10 @@ import org.powermock.modules.junit4.PowerMockRunner;
 @PrepareForTest(ContaMock.class)
 public class ContaMockTest {
 
-    double valorDep;
-    double valorMaior;
-    double valorNeg;
-    double valorSac;
+    private double valorDep;
+    private double valorMaior;
+    private double valorNeg;
+    private double valorSac;
 
     @Before
     public void prepareTests(){
