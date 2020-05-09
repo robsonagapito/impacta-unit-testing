@@ -14,10 +14,8 @@ public class ContaCorrente {
     }
 
     public double depositar(double valor) {
-        if (valor <= 10) {
-            if (valor > 0) {
-                setSaldo(getSaldo() + valor);
-            }
+        if (valor > 0) {
+            setSaldo(getSaldo() + valor);
         }
         return getTotal();
     }
